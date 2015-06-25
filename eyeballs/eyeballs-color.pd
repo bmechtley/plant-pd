@@ -1,0 +1,302 @@
+#N canvas 532 35 1126 953 10;
+#X obj 17 -483 tgl 15 0 fs empty fullscreen 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 17 -453 bng 15 250 50 0 create empty create 17 7 0 10 -262144
+-1 -1;
+#X obj 17 -423 bng 15 250 50 0 destroy empty destroy 17 7 0 10 -262144
+-1 -1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array lrdb-array 100 float 3;
+#A 0 0.359718 0.358429 0.373055 0.381543 0.378885 0.378613 0.396926
+0.457219 0.451974 0.440135 0.430367 0.421786 0.414273 0.404761 0.397149
+0.39136 0.385048 0.375725 0.367487 0.359142 0.35542 0.352168 0.346338
+0.340665 0.333584 0.327107 0.31995 0.313444 0.307468 0.301008 0.438349
+0.683395 0.72211 0.801316 0.815228 0.81286 0.803303 0.798615 0.789865
+0.789443 0.782465 0.772786 0.76258 0.746771 0.732756 0.715863 0.698573
+0.689898 0.684828 0.681167 0.671652 0.667713 0.662501 0.650688 0.642222
+0.627671 0.610774 0.594908 0.577847 0.561734 0.546966 0.532122 0.52247
+0.515679 0.508371 0.498556 0.486179 0.474827 0.468167 0.464706 0.565725
+0.651884 0.648746 0.666549 0.760411 0.813035 0.812755 0.805591 0.795183
+0.779968 0.771688 0.765113 0.758095 0.748551 0.736611 0.728518 0.722403
+0.713937 0.706924 0.692731 0.677554 0.662891 0.643374 0.626633 0.606048
+0.38285 0.381906 0.378022 0.372399 0.362257;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -208 -293 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array lgdb-array 100 float 3;
+#A 0 inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -208 -224 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array lbdb-array 100 float 3;
+#A 0 0.467107 0.54972 0.572657 0.618791 0.659492 0.642561 0.544939
+0.654244 0.563404 0.513228 0.384624 0.32726 0.370021 0.432312 0.471098
+0.535767 0.541265 0.395241 0.384049 0.317914 0.334146 0.403313 0.305675
+0.252123 0.173486 0.152863 0.153299 0.12344 0.162158 0.152304 0.579628
+1.03823 0.94282 1.13058 1.22028 1.19167 0.81846 0.888532 0.734606 0.839217
+0.708096 0.620981 0.576956 0.371918 0.404824 0.293846 0.219201 0.470395
+0.513682 0.597018 0.469402 0.519313 0.520666 0.413817 0.324245 0.240816
+0.187559 0.280425 0.176318 0.120447 0.129117 0.136161 0.187918 0.200417
+0.156567 0.146214 0.116759 0.10417 0.143255 0.184608 0.347334 0.43695
+0.400911 0.546521 0.745002 0.878344 0.891536 0.662036 0.488274 0.398261
+0.56901 0.592033 0.522524 0.423928 0.339825 0.411955 0.418292 0.377544
+0.359469 0.24117 0.236829 0.206476 0.146341 0.14637 0.102484 0.673438
+0.605997 0.476877 0.454721 0.405314;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -208 -154 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array rrdb-array 100 float 3;
+#A 0 0.199873 0.199311 0.215975 0.220889 0.218166 0.217995 0.229795
+0.264701 0.259328 0.247414 0.238078 0.230292 0.223855 0.215559 0.209462
+0.205385 0.200839 0.193288 0.187045 0.180825 0.179467 0.178517 0.174842
+0.171356 0.166445 0.162227 0.157354 0.153215 0.149652 0.145602 0.253776
+0.395642 0.418056 0.463911 0.471966 0.469539 0.459846 0.455516 0.447173
+0.452506 0.445769 0.43651 0.427041 0.412156 0.399628 0.384552 0.369548
+0.363821 0.36185 0.361236 0.354488 0.353565 0.351215 0.342043 0.336509
+0.324801 0.310987 0.298596 0.285269 0.273226 0.262807 0.252479 0.247626
+0.245637 0.242943 0.237541 0.22949 0.222569 0.220485 0.231889 0.327519
+0.3774 0.374185 0.385889 0.44023 0.470696 0.470409 0.463082 0.45272
+0.437828 0.430589 0.425319 0.419727 0.411687 0.40142 0.395397 0.391521
+0.385267 0.380626 0.368681 0.356066 0.344325 0.327906 0.314795 0.298055
+0.221646 0.220679 0.216738 0.211171 0.201751;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -98 -293 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array rgdb-array 100 float 3;
+#A 0 inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -98 -224 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array rbdb-array 100 float 3;
+#A 0 0.467107 0.54972 0.572657 0.618791 0.659492 0.642561 0.544939
+0.654244 0.563404 0.513228 0.384624 0.32726 0.370021 0.432312 0.471098
+0.535767 0.541265 0.395241 0.384049 0.317914 0.334146 0.403313 0.305675
+0.252123 0.173486 0.152863 0.153299 0.12344 0.162158 0.152304 0.579628
+1.03823 0.94282 1.13058 1.22028 1.19167 0.81846 0.888532 0.734606 0.839217
+0.708096 0.620981 0.576956 0.371918 0.404824 0.293846 0.219201 0.470395
+0.513682 0.597018 0.469402 0.519313 0.520666 0.413817 0.324245 0.240816
+0.187559 0.280425 0.176318 0.120447 0.129117 0.136161 0.187918 0.200417
+0.156567 0.146214 0.116759 0.10417 0.143255 0.184608 0.347334 0.43695
+0.400911 0.546521 0.745002 0.878344 0.891536 0.662036 0.488274 0.398261
+0.56901 0.592033 0.522524 0.423928 0.339825 0.411955 0.418292 0.377544
+0.359469 0.24117 0.236829 0.206476 0.146341 0.14637 0.102484 0.673438
+0.605997 0.476877 0.454721 0.405314;
+#X coords 0 2 100 0 100 50 2 0 0;
+#X restore -98 -154 graph;
+#N canvas 631 140 853 577 route-bands 0;
+#X obj 46 17 r~ lr;
+#X obj 311 18 r~ rr;
+#X obj 133 406 s lrdb;
+#X obj 400 406 s rrdb;
+#X obj 84 17 r~ lg;
+#X obj 348 18 r~ rg;
+#X obj 90 406 s lgdb;
+#X obj 354 406 s rgdb;
+#X obj 46 406 s lbdb;
+#X obj 311 406 s rbdb;
+#X obj 122 17 r~ lb;
+#X obj 387 18 r~ rb;
+#X obj 164 18 tgl 15 0 empty empty lock_sides 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 418 -71 loadbang;
+#X msg 418 -21 0.05;
+#X msg 459 -21 3.5;
+#X msg 494 -21 0.03;
+#X obj 46 42 scalerms;
+#X msg 535 -21 0.5;
+#X msg 571 -21 0.5;
+#X obj 46 157 scalerms;
+#X obj 46 272 scalerms;
+#X obj 311 272 scalerms;
+#X obj 311 42 scalerms;
+#X obj 311 157 scalerms;
+#X text 22 96 red;
+#X text 10 203 green;
+#X text 16 314 blue;
+#X connect 0 0 17 0;
+#X connect 1 0 23 0;
+#X connect 4 0 20 0;
+#X connect 5 0 24 0;
+#X connect 10 0 21 0;
+#X connect 11 0 22 0;
+#X connect 13 0 14 0;
+#X connect 13 0 15 0;
+#X connect 13 0 16 0;
+#X connect 13 0 18 0;
+#X connect 13 0 19 0;
+#X connect 14 0 17 1;
+#X connect 14 0 20 1;
+#X connect 14 0 21 1;
+#X connect 14 0 22 1;
+#X connect 14 0 23 1;
+#X connect 14 0 24 1;
+#X connect 15 0 17 2;
+#X connect 15 0 20 2;
+#X connect 15 0 21 2;
+#X connect 15 0 22 2;
+#X connect 15 0 23 2;
+#X connect 15 0 24 2;
+#X connect 16 0 17 3;
+#X connect 16 0 20 3;
+#X connect 16 0 21 3;
+#X connect 16 0 22 3;
+#X connect 16 0 23 3;
+#X connect 16 0 24 3;
+#X connect 17 0 2 0;
+#X connect 18 0 17 4;
+#X connect 18 0 20 4;
+#X connect 18 0 21 4;
+#X connect 18 0 22 4;
+#X connect 18 0 23 4;
+#X connect 18 0 24 4;
+#X connect 19 0 17 5;
+#X connect 19 0 20 5;
+#X connect 19 0 21 5;
+#X connect 19 0 22 5;
+#X connect 19 0 23 5;
+#X connect 19 0 24 5;
+#X connect 20 0 6 0;
+#X connect 21 0 8 0;
+#X connect 22 0 9 0;
+#X connect 23 0 3 0;
+#X connect 24 0 7 0;
+#X coords 0 -1 1 1 575 350 2 0 40;
+#X restore 111 -483 pd route-bands;
+#N canvas 1114 424 450 300 load-defaults 0;
+#X obj -209 -32 loadbang;
+#X obj -209 81 s xl;
+#X obj -146 81 s xr;
+#X obj -188 61 s wl;
+#X obj -167 40 s hl;
+#X obj -125 60 s wr;
+#X obj -104 40 s hr;
+#X msg -209 -9 -3 3 5 3 3 5 2500 100 5000 100 10000 10000;
+#X obj -209 15 unpack 0 0 0 0 0 0;
+#X connect 0 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 1 0;
+#X connect 8 1 3 0;
+#X connect 8 2 4 0;
+#X connect 8 3 2 0;
+#X connect 8 4 5 0;
+#X connect 8 5 6 0;
+#X restore -208 -40 pd load-defaults;
+#N canvas 1059 463 450 300 draw-colordbs 1;
+#X obj -219 14 r lrdb;
+#X obj -219 64 r lgdb;
+#X obj -219 113 r lbdb;
+#X obj -59 14 r rrdb;
+#X obj -59 64 r rgdb;
+#X obj -59 113 r rbdb;
+#X obj -219 139 circbuff lbdb-array 100;
+#X obj -219 40 circbuff lrdb-array 100;
+#X obj -219 90 circbuff lgdb-array 100;
+#X obj -59 40 circbuff rrdb-array 100;
+#X obj -59 90 circbuff rgdb-array 100;
+#X obj -59 139 circbuff rbdb-array 100;
+#X connect 0 0 7 0;
+#X connect 1 0 8 0;
+#X connect 2 0 6 0;
+#X connect 3 0 9 0;
+#X connect 4 0 10 0;
+#X connect 5 0 11 0;
+#X restore -208 -13 pd draw-colordbs;
+#X obj -205 -483 hsl 100 15 -3 3 0 0 xl empty x_left -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -95 -483 hsl 100 15 -3 3 0 0 xr empty x_right -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -205 -453 hsl 100 15 0 6 0 0 wl empty w_left -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -95 -453 hsl 100 15 0 6 0 0 wr empty w_right -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -205 -423 hsl 100 15 0 5 0 0 hl empty h_left -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -95 -423 hsl 100 15 0 5 0 0 hr empty h_right -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 16 -387 pddp/dsp;
+#N canvas 1056 86 450 300 drawing 0;
+#X obj -212 67 gemwin;
+#X msg -212 42 fullscreen \$1;
+#X msg -51 42 destroy;
+#X msg -118 65 reset;
+#X msg -120 42 create \, 1;
+#X obj -212 18 r fs;
+#X obj -120 19 r create;
+#X obj -51 19 r destroy;
+#X obj -216 169 r xr;
+#X obj -200 150 r wr;
+#X obj -184 130 r hr;
+#X obj -216 191 gainrect-color;
+#X obj -168 110 r rrdb;
+#X obj -152 130 r rgdb;
+#X obj -135 149 r rbdb;
+#X obj -89 191 gainrect-color;
+#X obj -89 169 r xl;
+#X obj -73 150 r wl;
+#X obj -57 130 r hl;
+#X obj -41 110 r lrdb;
+#X obj -25 130 r lgdb;
+#X obj -8 149 r lbdb;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 4 0;
+#X connect 7 0 2 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 11 2;
+#X connect 12 0 11 3;
+#X connect 13 0 11 4;
+#X connect 14 0 11 5;
+#X connect 16 0 15 0;
+#X connect 17 0 15 1;
+#X connect 18 0 15 2;
+#X connect 19 0 15 3;
+#X connect 20 0 15 4;
+#X connect 21 0 15 5;
+#X coords 0 300 1 299 85 60 0;
+#X restore -207 -97 pd drawing;
+#X obj 452 -78 adc~ 1 2;
+#X obj 693 198 s~ lb;
+#X obj 986 188 s~ rb;
+#X obj 15 -33 lrfilter~;
+#X obj 15 192 s~ lr;
+#X obj 308 202 s~ rr;
+#X obj 355 201 s~ lg;
+#X obj 648 198 s~ rg;
+#X obj 355 -34 lrfilter~;
+#X obj 693 -34 lrfilter~;
+#X obj 333 -124 loadbang;
+#X msg 333 -92 lowpass;
+#X msg 673 -92 bandpass;
+#X msg 1011 -92 highpass;
+#X connect 20 0 23 0;
+#X connect 20 0 28 0;
+#X connect 20 0 29 0;
+#X connect 20 1 23 1;
+#X connect 20 1 28 1;
+#X connect 20 1 29 1;
+#X connect 23 0 24 0;
+#X connect 23 1 25 0;
+#X connect 28 0 26 0;
+#X connect 28 1 27 0;
+#X connect 29 0 21 0;
+#X connect 29 1 22 0;
+#X connect 30 0 31 0;
+#X connect 30 0 32 0;
+#X connect 30 0 33 0;
+#X connect 31 0 23 2;
+#X connect 32 0 28 2;
+#X connect 33 0 29 2;

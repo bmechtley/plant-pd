@@ -1,0 +1,27 @@
+#N canvas 803 78 714 535 10;
+#X obj 105 103 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 56 29 tof/pmenu;
+#X obj 39 -25 loadbang;
+#X msg 39 -3 add allpass bandpass highpass highshelf lowpass lowshelf
+notch peaking resonant;
+#X obj 123 103 filterview;
+#X obj 111 375 biquad~;
+#X obj 162 376 biquad~;
+#X obj 93 339 inlet~;
+#X obj 145 335 inlet~;
+#X obj 110 401 outlet~;
+#X obj 165 398 outlet~;
+#X obj 262 32 inlet;
+#X connect 0 0 1 0;
+#X connect 1 1 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 11 0 4 0;
+#X coords 0 -1 1 1 325 225 2 100 100;

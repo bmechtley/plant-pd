@@ -1,0 +1,20 @@
+#N canvas 0 22 450 300 10;
+#X obj 110 100 inlet;
+#X obj 212 100 inlet;
+#X obj 125 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 173 152 counter;
+#X obj 254 100 loadbang;
+#X obj 110 178 tabwrite \$1;
+#X obj 254 125 i \$2;
+#X msg 311 176;
+#X obj 310 148 prepend set \$1;
+#X connect 0 0 2 0;
+#X connect 0 0 5 0;
+#X connect 1 0 3 4;
+#X connect 2 0 3 0;
+#X connect 3 0 5 1;
+#X connect 4 0 6 0;
+#X connect 4 0 8 0;
+#X connect 6 0 3 4;
+#X connect 8 0 7 0;
