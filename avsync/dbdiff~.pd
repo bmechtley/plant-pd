@@ -1,0 +1,24 @@
+#N canvas 0 22 450 300 10;
+#X obj 27 64 env~ 1470 735;
+#X obj 6 93 0;
+#X obj 27 122 -;
+#X obj 27 146 abs;
+#X obj 27 185 outlet;
+#X obj 27 40 inlet~;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-db-array 100 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 25 99 0 200 140 2 0 0;
+#X restore 119 30 graph;
+#X obj 83 185 circbuff \$0-db-array 100;
+#X connect 0 0 2 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 7 0;
+#X connect 5 0 0 0;
+#X coords 0 -1 1 1 220 150 1 110 25;
